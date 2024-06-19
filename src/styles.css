@@ -1,0 +1,265 @@
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    }
+    
+    header ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    header ul li {
+    display: inline;
+    margin-right: 20px;
+    }
+    
+    header ul li a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    header ul li a
+    {
+    text-decoration: underline;
+    }
+
+    .task-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza horizontalmente */
+        padding: 20px;
+      }
+      
+      .task-form-container {
+        width: 100%;
+        max-width: 600px; /* Largura máxima para o formulário */
+        margin-bottom: 20px; /* Espaçamento inferior */
+      }
+      
+      .task-form {
+        width: 100%;
+        max-width: 600px; /* Largura máxima para o formulário */
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center; /* Centraliza o conteúdo */
+      }
+      
+      .task-form form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .task-form input[type="text"],
+      .task-form button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .task-form input[type="text"] {
+        flex: 1;
+        max-width: 300px;
+        padding: 10px;
+      }
+      
+      .task-form button {
+        background-color: #008CBA; /* Azul */
+        color: white;
+        transition: background-color 0.3s ease;
+      }
+      
+      .task-form button:hover {
+        background-color: #005f6b; /* Azul mais escuro */
+      }
+
+
+.task-list-container {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha os itens no início (parte superior) */
+    height: 100vh; /* Altura total da viewport */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  }
+  
+  
+  /* Estilos para a linha separadora */
+  .separator-line {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+  }
+  
+  /* Estilos para a lista de tarefas */
+  .task-list {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 500px; /* Largura máxima */
+    align-items: center;
+  }
+  
+  /* Estilos para cada tarefa individual */
+  .task {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Ocupa toda a largura disponível */
+    max-width: 500px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .task h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .task p {
+    margin-bottom: 0;
+  }
+  
+  /* Estilos para o botão "Ver Detalhes" */
+  .task-detail {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da viewport */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2; /* Cor de fundo do container */
+  }
+  
+  .task-card {
+    width: 400px; /* Largura do card */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza conteúdo dentro do card */
+  }
+  
+  .task-card h2 {
+    margin-top: 0;
+    color: #333; /* Cor do título */
+  }
+  
+  .task-card p {
+    margin-bottom: 0;
+    color: #666; /* Cor do texto */
+  }
+  
+
+  /* pagina notFound */
+  .not-found {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .not-found h2 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .not-found p {
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 10px;
+  }
+
+
+/* botao ver detalhes*/
+  .view-details {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008CBA; /* Cor de fundo verde */
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado padrão */
+    max-width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+  }
+  
+  .view-details:hover {
+    background-color: #005f6b; /* Cor mais escura ao passar o mouse */
+  }
+
+  .view-details-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+  }
+
+
+/* TELA HOME */
+
+
+.home-container {
+    display: flex;
+    justify-content: flex-end; /* Texto à direita */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Toda a altura da viewport */
+    background-image: url('https://blog.runrun.it/wp-content/uploads/2022/05/117960-blog.jpg'); /* URL da imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o container */
+    background-position: center; /* Centraliza a imagem */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+  
+  .content {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin-right: 20px; /* Espaço à direita */
+  }
+  
+  .text {
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo do texto com transparência */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    text-align: left; /* Alinha o texto à esquerda dentro do container */
+  }
+  
+  .text h1 {
+    margin-top: 0;
+    font-size: 3rem; /* Tamanho do título */
+  }
+  
+  .text p {
+    font-size: 1.5rem; /* Tamanho do texto */
+    margin-bottom: 20px; /* Espaço inferior */
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado padrão */
+    font-size: 1.2rem; /* Tamanho do texto do botão */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+  }
+  
+  .btn:hover {
+    background-color: #45a049; /* Cor mais escura ao passar o mouse */
+  }

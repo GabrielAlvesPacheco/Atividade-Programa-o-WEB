@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './componentes/Header';
+import TaskList from './componentes/Tasklist'; 
+import TaskDetail from './componentes/TaskDetail'; 
+import Home from './componentes/Home'; 
+import { TaskProvider } from './componentes/TaskContext';
+import NotFound from './componentes/NotFound';
+import './styles.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <TaskProvider>  {/* Use TaskProvider para fornecer contexto para a aplicação */}
+        <div className="app">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tasks" element={<TaskList />} />
+            <Route path="/tasks/:id" element={<TaskDetail />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+      </TaskProvider>
+    </Router>
   );
-}
+};
 
 export default App;
